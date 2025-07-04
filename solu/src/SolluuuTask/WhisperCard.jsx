@@ -1,7 +1,7 @@
 import React from "react";
 import { FaPlay, FaHeart, FaComment } from "react-icons/fa";
 
-// Sample data
+
 const whisperData = [
   {
     id: 2809,
@@ -31,14 +31,14 @@ const whisperData = [
 const WhisperCard = () => {
   return (
     <div className="w-full px-4 py-8 bg-gray-100">
-      {/* Flex layout for vertical stacking */}
+      
       <div className="flex flex-col gap-6">
         {whisperData.map(({ id, date, title, duration, mood, filter }) => (
           <div
             key={id}
             className="w-full bg-gradient-to-br from-sky-500 to-indigo-600 p-6 rounded-2xl text-white shadow-xl transition-all duration-300 hover:scale-[1.02]"
           >
-            {/* Header */}
+            
             <div className="flex justify-between items-start flex-wrap gap-3">
               <div>
                 <p className="text-sm text-white/80">Whisperer #{id}</p>
@@ -52,7 +52,7 @@ const WhisperCard = () => {
               </span>
             </div>
 
-            {/* Audio Player */}
+  
             <div className="mt-6 flex items-center flex-wrap gap-4">
               <button className="bg-sky-500 hover:bg-sky-600 rounded-full p-3 text-white shadow-md transition">
                 <FaPlay />
@@ -63,14 +63,14 @@ const WhisperCard = () => {
               <span className="text-xs text-white/80">{duration}</span>
             </div>
 
-            {/* Filter Tag */}
+         
             {filter && (
               <div className="mt-4 inline-block bg-indigo-200/20 text-indigo-100 text-sm px-4 py-1 rounded-full shadow-inner backdrop-blur-sm font-medium">
                 🌬 {filter}
               </div>
             )}
 
-            {/* Action Buttons */}
+         
             <div className="mt-6 pt-4 border-t border-white/30 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm">
               <div className="flex gap-6">
                 <div className="flex items-center gap-2 hover:scale-110 transition-transform cursor-pointer">

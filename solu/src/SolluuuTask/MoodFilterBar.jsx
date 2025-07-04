@@ -23,12 +23,12 @@ const MoodFilterBar = ({ onSelect }) => {
   return (
     <div className="bg-white px-4 py-3 shadow-md w-full overflow-x-auto">
       <div className="flex items-center gap-3">
-        {/* Filter Icon */}
+   
         <div className="text-blue-500 text-lg">
           <FaFilter />
         </div>
 
-        {/* Mood Tags */}
+        
         <div className="flex items-center gap-2 overflow-x-auto">
           {moods.map((mood) => (
             <button
